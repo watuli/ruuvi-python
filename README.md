@@ -15,7 +15,8 @@ cd /lib/systemd/system/
 sudo nano hello.service
 
 sudo systemctl daemon-reload 
-ssudo systemctl status ruuvi.service 
+sudo chmod 644 /lib/systemd/system/ruuvi.service
+sudo systemctl status ruuvi.service 
 sudo systemctl start ruuvi.service
 sudo systemctl stop ruuvi.service
 
