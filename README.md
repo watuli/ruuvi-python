@@ -4,7 +4,7 @@ https://github.com/ttu/ruuvitag-sensor
 
 
 lataa 
-python -m pip install ruuvitag_sensor
+python3 -m pip install ruuvitag_sensor
 
 python3 ~/.local/lib/python3.9/site-packages/ruuvitag_sensor -f
 
