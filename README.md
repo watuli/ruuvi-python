@@ -12,7 +12,21 @@ aja servisenä
 https://gist.github.com/emxsys/a507f3cad928e66f6410e7ac28e2990f
 
 cd /lib/systemd/system/
-sudo nano hello.service
+sudo nano ruuvi.service
+
+[Unit]
+Description=RUUVI TAG python
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/mice/scripts/ruuvi/post_to_influxdb.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
+
+======================================
 
 sudo systemctl daemon-reload 
 sudo chmod 644 /lib/systemd/system/ruuvi.service
