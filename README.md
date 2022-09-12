@@ -5,7 +5,8 @@ https://github.com/ttu/ruuvitag-sensor
 
 lataa 
 python3 -m pip install ruuvitag_sensor
-pip3 install influxdb
+sudo pip3 install ruuvitag_sensor
+sudo pip3 install influxdb
 
 python3 ~/.local/lib/python3.9/site-packages/ruuvitag_sensor -f
 
