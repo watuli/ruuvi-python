@@ -21,7 +21,7 @@ After=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /home/mice/scripts/scripts/ruuvi-python/post_to_influxdb.py
+ExecStart=/usr/bin/python3 /home/mice/scripts/ruuvi-python/post_to_influxdb.py
 Restart=on-abort
 
 [Install]
