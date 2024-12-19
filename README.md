@@ -24,15 +24,21 @@ cd /lib/systemd/system/
 sudo nano ruuvi.service
 
 [Unit]
+
 Description=RUUVI TAG python
+
 After=multi-user.target
 
 [Service]
+
 Type=simple
+
 ExecStart=/usr/bin/python3 /home/mice/scripts/ruuvi-python/post_to_influxdb.py
+
 Restart=on-abort
 
 [Install]
+
 WantedBy=multi-user.target
 
 ======================================
