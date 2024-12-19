@@ -8,7 +8,8 @@ python3 -m pip install ruuvitag_sensor
 sudo pip3 install ruuvitag_sensor
 sudo pip3 install influxdb
 
-python3 ~/.local/lib/python3.9/site-packages/ruuvitag_sensor -f
+python3.11 ~/.local/lib/python3.11/site-packages/ruuvitag_sensor -f
+
 
 aja servisenä
 https://gist.github.com/emxsys/a507f3cad928e66f6410e7ac28e2990f
