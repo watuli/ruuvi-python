@@ -2,6 +2,10 @@
 
 https://github.com/ttu/ruuvitag-sensor
 
+HUOM jos feilaa noiden jälkeen aja
+
+sudo rm /usr/lib/python3.*/EXTERNALLY-MANAGED
+
 
 lataa 
 python3 -m pip install ruuvitag_sensor
